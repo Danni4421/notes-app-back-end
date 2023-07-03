@@ -12,8 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^20.0.1",
+    "@hapi/hapi": "^21.3.2",
     "eslint-plugin-import": "^2.22.1",
+    "joi": "^17.9.2",
     "nanoid": "^3.1.20"
   },
   "devDependencies": {

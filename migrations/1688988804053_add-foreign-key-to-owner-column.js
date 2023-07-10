@@ -6,11 +6,11 @@ exports.shorthands = undefined;
 exports.up = (pgm) => {
   // initializing new User
   pgm.sql(
-    "INSERT INTO users (id, username, password, fullname) VALUES ('old_notes', 'old_notes', old_notes', 'old_notes')"
+    "INSERT INTO users (id, username, password, fullname) VALUES ('old_notes', 'old_notes', 'old_notes', 'old_notes')"
   );
 
   // changing value for owner that containt null value
-  pgm.sql("UPDATE users SET owner = 'old_notes' WHERE owner IS NULL");
+  pgm.sql("UPDATE notes SET owner = 'old_notes' WHERE owner IS NULL");
 
   // set constraint foreign key to owner attribute
   pgm.addConstraint(

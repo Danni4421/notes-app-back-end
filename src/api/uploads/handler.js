@@ -12,11 +12,11 @@ class UploadsHandler {
     try {
       // getting headers data to validate
       const { data } = request.payload;
+      console.log(data.hapi.headers);
       this._validator.validateImageHeaders(data.hapi.headers);
-
+      console.log('berhasil ke sini');
       const filename = await this._service.writeFile(data, data.hapi);
-
-      console.log(filename);
+      console.log('dapet filename');
 
       const response = h.response({
         status: 'success',

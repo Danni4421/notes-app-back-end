@@ -1,4 +1,4 @@
 /node_modules
 .env
 .prod.env
-/src/api/uploads/file
+src/api/uploads/file
